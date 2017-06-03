@@ -1,0 +1,34 @@
+.repo-card {
+  height: 100%;
+  width: 350px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.avatar {
+  border-radius: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.avatar-box {
+  padding-bottom: 10px;
+}
+
+.background {
+  background-color: ghostwhite;
+}
+
+.content-center {
+  -webkit-box-pack: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+
+.card-footer {
+  background-color: rgba(0,0,0,.125);
+  vertical-align: bottom;
+}
+
+p {
+  text-indent: 20px; /* Отступ первой строки в пикселах */
+}

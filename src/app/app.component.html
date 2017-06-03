@@ -1,3 +1,16 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <app-header>
+    <div class="left-side">
+      <img [src]="logo" [alt]="title" [style.width.px]="logoWidth">
+      {{title}}
+    </div>
+    <app-search class="my-search">
+      <md-input-container>
+        <input mdInput [placeholder]="placeholder" #search>
+      </md-input-container>
+    </app-search>
+  </app-header>
+
+  <app-search-result [repoItems]="repoItems$">
+  </app-search-result>
+</div>

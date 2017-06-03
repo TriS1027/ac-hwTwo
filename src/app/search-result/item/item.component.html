@@ -1,0 +1,19 @@
+<md-card class="repo-card" [ngClass]="{background:isOdd}">
+  <md-card-title-group class="content-center avatar-box">
+    <img class="avatar" md-card-md-image src="{{repository?.owner?.avatar_url}}">
+  </md-card-title-group>
+  <md-card-title-group class="content-center">
+    <md-card-title>{{repository?.owner?.login}}</md-card-title>
+  </md-card-title-group>
+  <md-card-title-group  class="content-center">
+    <md-card-title>{{repository?.name}}</md-card-title>
+  </md-card-title-group>
+  <md-card-content>
+    <p>
+      {{repository?.description}}
+    </p>
+  </md-card-content>
+  <md-card-footer class="card-footer">
+    <a md-button href="{{repository.html_url}}" target="_blank">GOTO REPOSITORY</a>
+  </md-card-footer>
+</md-card>

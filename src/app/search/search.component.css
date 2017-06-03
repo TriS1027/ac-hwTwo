@@ -1,0 +1,15 @@
+.mat-input-container {
+  color: aliceblue;
+}
+
+.mat-input-underline {
+  border-color: rgba(255, 255, 255, .5);
+}
+
+.mat-input-placeholder.mat-empty.mat-float {
+  color: rgba(255, 255, 255, .6);
+}
+
+.mat-input-placeholder {
+  color: rgba(255, 255, 255, .6);
+}

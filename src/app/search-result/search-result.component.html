@@ -1,0 +1,7 @@
+<div *ngIf="repoItems$ | async as repos" class="row content-center">
+  <div *ngIf="repos.length === 0"> No results found!</div>
+  <div *ngFor="let repo of repos; index as i; odd as isOdd" style="padding: 10px">
+    <app-item [item]="repo" [isOdd]="isOdd" class="col col-xs-12 col-sm-6 col-lg-4">
+    </app-item>
+  </div>
+</div>
